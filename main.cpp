@@ -16,9 +16,5 @@ int main() {
 	int userInput = mainMenu();
 	mainMenuSelection(userInput);  
 
-	char tempName[75]; 
-	cout << "Enter person's name: " << endl; 
-	cin >> tempName;  
 	
-	Person person(tempName);  
 }
