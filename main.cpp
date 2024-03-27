@@ -12,6 +12,9 @@ int main() {
 	// opening the address book in reading and append mode 
 	fstream file; 
 	file.open("myAddressBook.txt", ios::out | ios::in | ios::app); 
-	 
-	return 0;   
+
+	AddressBook myBook; 
+
+	Person* person = new Person(); 
+	Person* people[MAX_ENTRIES];  
 }
