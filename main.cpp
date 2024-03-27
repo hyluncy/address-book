@@ -9,12 +9,9 @@
 using namespace std; 
 
 int main() {
-	FILE* file; 
 	// opening the address book in reading and append mode 
-	file = fopen("myAddressBook.txt", "a+");
-
-	int userInput = mainMenu();
-	mainMenuSelection(userInput);  
-
-	
+	fstream file; 
+	file.open("myAddressBook.txt", ios::out | ios::in | ios::app); 
+	 
+	return 0;   
 }
