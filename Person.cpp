@@ -14,6 +14,30 @@ Person::~Person() {
 	delete[] m_Phone; 
 }
 
+// Getter functions
+const char* Person::getName() const {
+	return m_Name;
+}
+const char* Person::getAddress() const {
+	return m_Address;
+}
+const char* Person::getPhone() const {
+	return m_Phone;
+}
+
+// Setter functions 
+void Person::setName(char* name) {
+	m_Name = name;
+}
+
+void Person::setAddress(char* address) {
+	m_Address = address;
+}
+
+void Person::setPhone(char* phone) {
+	m_Phone = phone;
+}
+
 
 
 

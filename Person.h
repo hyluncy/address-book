@@ -14,6 +14,16 @@ class Person {
 	char* m_Phone; 
 public: 
 	~Person(); 
+
+	// Getter functions 
+	const char* getName() const; 
+	const char* getAddress() const;  
+	const char* getPhone() const; 
+
+	// Setter functions 
+	void setName(char* name); 
+	void setAddress(char* address); 
+	void setPhone(char* phone); 
 };
 
 #endif 
