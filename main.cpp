@@ -17,4 +17,13 @@ int main() {
 
 	Person* person = new Person(); 
 	Person* people[MAX_ENTRIES];  
+
+	int userInput = -1;
+
+	do {
+		userInput = myBook.mainMenu();
+		myBook.mainMenuSelection(userInput, file, person, people);
+	} while (userInput != 0);
+
+	return 0;
 }
